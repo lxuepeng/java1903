@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: hello-spring-cloud-config
+  cloud:
+    config:
+      label: master
+      server:
+        git:
+          url: https://github.com/lxuepeng/java1903.git
+          search-paths: text
+          username: 1078827360@qq.com
+          password: 521luxuepeng
+  zipkin:
+    base-url: http://localhost:9411
+server:
+    port: 8888
+
+eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
